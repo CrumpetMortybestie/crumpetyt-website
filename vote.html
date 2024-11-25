@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Monthly Poll</h1>
+    <p>What is your favorite color?</p>
+    <form>
+        <input type="radio" id="red" name="color" value="Red">
+        <label for="red">Red</label><br>
+        
+        <input type="radio" id="blue" name="color" value="Blue">
+        <label for="blue">Blue</label><br>
+        
+        <input type="radio" id="green" name="color" value="Green">
+        <label for="green">Green</label><br><br>
+        
+        <button type="button" onclick="vote()">Submit Vote</button>
+    </form>
+    <div id="result"></div>
+    <a href="index.html">Back to Home</a>
+    
+    <script>
+        function vote() {
+            document.getElementById('result').innerHTML = 'Thank you for voting! Results will be tallied soon.';
+        }
+    </script>
+</body>
+</html>
